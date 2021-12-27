@@ -1,0 +1,2 @@
+class Skip < ApplicationRecord
+end

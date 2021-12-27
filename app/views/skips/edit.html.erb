@@ -1,0 +1,13 @@
+<h1>Skips#edit</h1>
+
+<%= form_with model: @skip, url:skip_path(@skip), local:true do |f| %>
+<p>名前</p>
+<p><%= f.text_field :name %></p>
+<p>個数</p>
+<p><%= f.text_field :number %></p>
+
+<p><%= f.submit "hen" %></p>
+<% end %>
+
+<%= link_to "sakujo", skip_path(@skip.id), method: :delete %>
+

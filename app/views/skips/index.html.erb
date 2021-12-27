@@ -1,0 +1,8 @@
+<h1>Skips#index</h1>
+
+<% @skips.each do |skip|%>
+<p>名前</p>
+<p><%= link_to skip.name, skip_path(skip.id)%></p>
+<p>個数</p>
+<p><%= skip.number %></p>
+<% end %>

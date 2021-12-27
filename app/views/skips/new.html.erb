@@ -1,0 +1,10 @@
+<h1>Skips#new</h1>
+
+<%= form_with model: @skip, url:skips_path, local:true do|f| %>
+<p>名前</p>
+<p><%= f.text_field :name%></p>
+<p>数</p>
+<p><%= f.text_field :number %></p>
+
+<p><%= f.submit "ind" %></p>
+<% end %>
